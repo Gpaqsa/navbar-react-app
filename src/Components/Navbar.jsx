@@ -45,11 +45,9 @@ const Navbar = () => {
         <h1 className='icon'><a href={menuItems[0].title}>React <i className="fab fa-react"></i></a></h1>
         <button
           className="toggle"
-          onClick={()=>console.log("GioTazo")}
+          onClick={()=>setNavbarOpen(!navbarOpen)}
         >
           <i className={navbarOpen ? "fas fa-times" : "fas fa-bars"} ></i>
-
-
         </button>
       </div>
 
